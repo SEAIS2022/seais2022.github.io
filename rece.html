@@ -199,16 +199,16 @@ position: absolute;
             
 
 
-            <tr class="item last toggel2">
+            <tr class="item last toggel2 ">
                 <td>
-                    Meeting (Authors) of main conference<br/>(SEAIS2022 Conference Registration Fee)
+                    Main conference<br/>(SEAIS2022 Conference Registration Fee)
                 </td>
                 <td>
                     $250.00 SGD
                 </td>
             </tr>
             
-            <tr class="total toggel2">
+            <tr class="total toggel2 ">
                 <td></td>
                 
                 <td>
@@ -281,15 +281,8 @@ position: absolute;
    }
 
    function toggle(amount_val){
-       console.log(amount_val<=300,amount_val>100,amount_val>=900 ,"===!<<>>>")
-       if (amount_val<=100){
-            var hidden="toggel1"
-       }else if (amount_val>=900){
-            var hidden="toggel3"
-       }
-       else{
-            var hidden="toggel2"
-       }
+    var hidden="toggel2"
+
        ["toggel1","toggel2","toggel3"] .forEach(ele =>{
            if (ele !=hidden){
            console.log("find ...", ele)
