@@ -204,7 +204,7 @@ position: absolute;
                     Main conference<br/>(SEAIS2022 Conference Registration Fee)
                 </td>
                 <td>
-                    $250.00 SGD
+                    $<div class="amount">250.00</div> SGD
                 </td>
             </tr>
             
@@ -212,7 +212,7 @@ position: absolute;
                 <td></td>
                 
                 <td>
-                   Total: $250.00 SGD
+                   Total: $<div class="amount">250.00</div> SGD
                 </td>
             </tr>            
 
@@ -222,7 +222,7 @@ position: absolute;
                     <table>
                         <tr>
                             <td>
-                                This is to acknowledge that the amount of SGD <b >250</b> has been paid by <b data="first_name" style = "text-transform:capitalize;display:inline-block;"></b> <b data="last_name" style = "text-transform:capitalize;display:inline-block;"></b>.<br>
+                                This is to acknowledge that the amount of SGD <b ><div class="amount">250</div></b> has been paid by <b data="first_name" style = "text-transform:capitalize;display:inline-block;"></b> <b data="last_name" style = "text-transform:capitalize;display:inline-block;"></b>.<br>
                             </td>
                             <td>
                             </td>
@@ -304,6 +304,14 @@ position: absolute;
                render_date();
                console.log(getParamsAsObject);
                console.log(getParamsAsObject.amount,parseInt(getParamsAsObject["amount"]),"!!")
+
+               var els = document.getElementById("date");
+            
+                var x_amount=document.getElementsByClassName("amount");  // Find the elements
+                for(var i = 0; i < x.length; i++){
+                    x_amount[i].innerText=getParamsAsObject.amount;    // Change the content
+                }
+
                 toggle(parseInt(getParamsAsObject.amount)) 
 /*               if (parseInt(getParamsAsObject.amount)==300){
                   toggle(true)
