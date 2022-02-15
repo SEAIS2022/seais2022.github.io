@@ -199,7 +199,7 @@ position: absolute;
             
 
 
-            <tr class="item last toggel2 ">
+            <tr class="item last ">
                 <td>
                     Main conference<br/>(SEAIS2022 Conference Registration Fee)
                 </td>
@@ -208,7 +208,7 @@ position: absolute;
                 </td>
             </tr>
             
-            <tr class="total toggel2 ">
+            <tr class="total ">
                 <td></td>
                 
                 <td>
@@ -222,7 +222,7 @@ position: absolute;
                     <table>
                         <tr>
                             <td>
-                                This is to acknowledge that the amount of SGD <b class="toggel2">250</b><b class="toggel1">250</b><b class="toggel3">250</b> has been paid by <b data="first_name" style = "text-transform:capitalize;display:inline-block;"></b> <b data="last_name" style = "text-transform:capitalize;display:inline-block;"></b>.<br>
+                                This is to acknowledge that the amount of SGD <b >250</b> has been paid by <b data="first_name" style = "text-transform:capitalize;display:inline-block;"></b> <b data="last_name" style = "text-transform:capitalize;display:inline-block;"></b>.<br>
                             </td>
                             <td>
                             </td>
@@ -281,17 +281,7 @@ position: absolute;
    }
 
    function toggle(amount_val){
-    var hidden="toggel2"
-
-       ["toggel1","toggel2","toggel3"] .forEach(ele =>{
-           if (ele !=hidden){
-           console.log("find ...", ele)
-            var els = document.getElementsByClassName(ele);
-            Array.prototype.forEach.call(els, function(el) {
-                el.style.display="none";
-             });
-           }
-        })
+   
    }
 
    function render_date(){
